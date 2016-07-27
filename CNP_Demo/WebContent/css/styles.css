@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+/* Home Screen */
+.cnplogo{
+	margin: 0px 0px 0px 40px;
+	padding-left:15px;
+	width : 140px !important;
+	height: 35px !important;
+}
+.topForm{
+	background-color: yellow !important;
+	margin-bottom:-50px !important;
+	padding-bottom: 0px !important;
+}
+/* .headArea .sapMBar{
+	height:120px !important;
+} */
+
+.cnpbtn .sapMInputBaseInner{
+	height:30px !important;
+}
+.cnpbtn .sapMBtnInner{
+	height:30px !important;
+	margin-top:-10px !important;
+}
+.cnpbtn .sapMBtnContent{
+	line-height: 2em !important;
+}
+/* .pnl_Hourly  */.sapMPanelBGTranslucent .sapMPanelContent{
+	padding:0px !important;
+}
+.sapMPanelContent{
+	/* padding-top: 0px !important; */
+	padding: 0px !important; 
+}
+.noMarginPadding{
+	padding: 0px !important;
+	margin: 0px !important;	
+}
+.sapMInputBase {
+	/* background-color:red; */
+    height: 2.3rem !important;
+}
+
+.headLine { color: #7c795d; font-family: 'Trocchi', serif; font-size: 20px; font-weight: normal; line-height: 48px; margin: 0; }
+
+.helpBack{
+	 background-color: #2F2727;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+}
+
+*{
+    outline-style:none !important; 
+}
+

@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:form="sap.ui.commons.form" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<Dialog title="App Help" icon="sap-icon://sys-help-2" class="sapUiNoMargin helpBack" contentWidth="600px" contentHeight="388px">
+	<!-- <l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop noMarginPadding">
+		<l:content> -->
+			<Carousel class="sapUiContentPadding" loop="false" height="100%">
+				<pages>
+					<Image src="images/Step 1.png" height="100%" alt="Example picture of speakers"/>
+		 
+					<Image src="images/centerpoint-energy-logo.png" alt="Example picture of USB flash drive"/>
+		 
+					<Image src="images/centerpoint-energy-logo.png" alt="Example picture of spotlight"/>
+		 
+					<Image src="images/centerpoint-energy-logo.png" alt="Example picture of screw"/>
+				</pages>
+			</Carousel>
+			<!-- <HBox>
+				<Text text="Hourly Comparison" class="headLine"></Text>
+				<layoutData>
+					<l:GridData span="L12 M12 S12" />
+				</layoutData>
+			</HBox>
+			<l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop noMarginPadding">
+				<l:content>
+					<HBox>
+						<Label text="Max " class="sapUiTinyMarginTop"></Label>
+						<Input text="" class="cnpbtn"></Input>
+						<layoutData>
+							<l:GridData span="L2 M3 S12" />
+						</layoutData>
+					</HBox>
+					
+					<HBox>
+						<Label text="Min " class="sapUiTinyMarginTop"></Label>
+						<Input text="" class="cnpbtn"></Input>
+						<layoutData>
+							<l:GridData span="L2 M3 S12" />
+						</layoutData>
+					</HBox>
+				</l:content>
+			</l:Grid> -->
+		<!-- </l:content>
+	</l:Grid> -->
+	</Dialog>
+</core:FragmentDefinition>

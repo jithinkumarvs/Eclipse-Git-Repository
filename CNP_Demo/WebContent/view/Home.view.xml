@@ -1,0 +1,124 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:viz="sap.viz.ui5.controls" 
+	xmlns:suite="sap.suite.ui.commons"
+	xmlns="sap.m"
+	xmlns:vbm="sap.ui.vbm" 
+	xmlns:l="sap.ui.layout" 
+	xmlns:f="sap.ui.layout.form"
+	xmlns:layout="sap.ui.layout" 
+	controllerName="utegration.cnp.controller.Home"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title" class="headArea">
+		<customHeader>
+			<Bar>
+				<contentLeft>
+					<Image class="cnplogo" src="images/centerpoint-energy-logo.png"></Image>
+				</contentLeft>
+				<contentMiddle>
+				</contentMiddle>
+				<contentRight>
+					<Button text="Help" type="Accept" press="onHelpClick" icon="sap-icon://sys-help-2"></Button>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		<content>
+			<f:SimpleForm class="topForm">
+				<l:Grid defaultSpan="L6 M6 S12" class="sapUiNoMarginTop noMarginPadding">
+					<l:content>
+						<l:Grid defaultSpan="L12 M12 S6" class="sapUiNoMarginTop noMarginPadding">
+						<l:content>
+							<Label text="ESI ID" class="sapUiSmallMarginTop">
+								<layoutData>
+									<l:GridData span="L3 M3 S4" />
+								</layoutData>
+							</Label>
+							<Input id="txt_esid" class="cnpbtn" type="Text" placeholder="ESI ID">
+								<layoutData>
+									<l:GridData span="L7 M7 S6" />
+								</layoutData>
+							</Input>
+							<Button text="Apply" width="100%" class="cnpbtn">
+								<layoutData>
+									<l:GridData span="L2 M2 S2" />
+								</layoutData>
+							</Button>
+							<Label text="GLN SDP Count" class="sapUiSmallMarginTop">
+							<layoutData>
+								<l:GridData span="L3 M3 S6" />
+							</layoutData>
+							</Label>
+							<Input id="txt_glnsdp" class="cnpbtn" type="Text" placeholder="GLN SDP">
+								<layoutData>
+									<l:GridData span="L3 M3 S6" />
+								</layoutData>
+							</Input>
+							<Label text="ZIP SDP Count" class="sapUiSmallMarginTop">
+									<layoutData>
+										<l:GridData span="L3 M3 S6" />
+									</layoutData>
+								</Label>
+								<Input id="txt_zipsdp" class="cnpbtn" type="Text" placeholder="ZIP SDP">
+									<layoutData>
+										<l:GridData span="L3 M3 S6" />
+									</layoutData>
+								</Input>
+						</l:content>
+						</l:Grid>
+						<l:Grid defaultSpan="L6 M6 S12" class="sapUiNoMarginTop">
+						<l:content>
+							<FlexBox alignItems="Start" justifyContent="End">
+								<items>
+									<Button text="Detail Report" type="Emphasized" class="sapUiSmallMarginEnd cnpbtn" />
+								</items>
+								<layoutData>
+									<l:GridData span="L12 M12 S12" />
+								</layoutData>
+							</FlexBox>
+							<Text text="Interval Time From :  " class="sapUiTinyMarginTop">
+								<layoutData>
+									<l:GridData span="L2 M6 S6" />
+								</layoutData>
+							</Text>
+							<Input id="txt_interFrom" class="cnpbtn"  type="Text" placeholder="from">
+								<layoutData>
+									<l:GridData span="L3 M6 S6" />
+								</layoutData>
+							</Input>
+							<Text text="Interval Time To :  " class="sapUiTinyMarginTop">
+								<layoutData>
+									<l:GridData span="L2 M6 S6" />
+								</layoutData>
+							</Text>
+							<Input id="txt_interTo" class="cnpbtn" type="Text" placeholder="to">
+								<layoutData>
+									<l:GridData span="L3 M6 S6" />
+								</layoutData>
+							</Input>
+							<Button text="Refresh" class="cnpbtn">
+								<layoutData>
+									<l:GridData span="L2 M2 S12" />
+								</layoutData>
+							</Button>
+						</l:content>
+						</l:Grid>
+					</l:content>
+				</l:Grid>
+			</f:SimpleForm>
+			<l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop noMarginPadding">
+				<l:content>
+					<Panel id="pnl_Hourly"> 
+						<layoutData>
+							<l:GridData span="L6 M6 S12" />
+						</layoutData>
+					</Panel>
+					<Panel id="pnl_Daily"> 
+						<layoutData>
+							<l:GridData span="L6 M6 S12" />
+						</layoutData>
+					</Panel>
+				</l:content>
+			</l:Grid>
+		</content>
+	</Page>
+</core:View>

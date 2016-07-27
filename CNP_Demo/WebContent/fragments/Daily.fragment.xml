@@ -1,0 +1,73 @@
+<core:FragmentDefinition  xmlns:core="sap.ui.core" 
+		    xmlns:mvc="sap.ui.core.mvc"
+			xmlns:viz="sap.viz.ui5.controls" 
+			xmlns:suite="sap.suite.ui.commons"
+			xmlns="sap.m"
+			xmlns:vbm="sap.ui.vbm" 
+			xmlns:l="sap.ui.layout" 
+			xmlns:f="sap.ui.layout.form"
+			xmlns:layout="sap.ui.layout">
+	<l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop noMarginPadding">
+		<l:content>
+			<HBox>
+				<Text text="Daily Comparison" class="headLine"></Text>
+				<layoutData>
+					<l:GridData span="L12 M12 S12" />
+				</layoutData>
+			</HBox>
+			<l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop noMarginPadding">
+				<l:content>
+					<HBox>
+						<Label text="Max " class="sapUiTinyMarginTop"></Label>
+						<Input text="" class="cnpbtn"></Input>
+						<layoutData>
+							<l:GridData span="L2 M3 S12" />
+						</layoutData>
+					</HBox>
+					<ScrollContainer focusable="true" height="100%"
+						horizontal="false" vertical="false" width="100%">
+							<suite:ChartContainer
+								id="chartContainer1"
+								showFullScreen="true"
+								showPersonalization="false"
+								autoAdjustHeight="false"
+								showLegend="true"
+								personalizationPress="attachPersonalizationPress"
+								contentChange="attachContentChange"
+								title="Revenue">
+								<suite:content>
+									<suite:ChartContainerContent>
+										<suite:content>
+											<viz:VizFrame height="19em" id="idVizFrameDaily"
+												uiConfig="{applicationSet:'fiori'}" vizType="line" width="100%">
+											</viz:VizFrame>
+										</suite:content>
+									</suite:ChartContainerContent>	
+								</suite:content>
+								</suite:ChartContainer>
+								<layoutData>
+							<l:GridData span="L10 M9 S12" />
+						</layoutData>
+						</ScrollContainer>
+					<!-- <ScrollContainer focusable="true" height="100%"
+						horizontal="false" vertical="false" width="100%">
+						<viz:Popover id="idPopOver1"></viz:Popover>
+						<viz:VizFrame height="19em" id="idVizFrameDaily"
+							uiConfig="{applicationSet:'fiori'}" vizType="line" width="100%">
+						</viz:VizFrame>
+						<layoutData>
+							<l:GridData span="L10 M9 S12" />
+						</layoutData>
+					</ScrollContainer> -->
+					<HBox>
+						<Label text="Min " class="sapUiTinyMarginTop"></Label>
+						<Input text="" class="cnpbtn"></Input>
+						<layoutData>
+							<l:GridData span="L2 M3 S12" />
+						</layoutData>
+					</HBox>
+				</l:content>
+			</l:Grid>
+		</l:content>
+	</l:Grid>
+</core:FragmentDefinition>

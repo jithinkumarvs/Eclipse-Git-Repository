@@ -1,0 +1,104 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:suite="sap.suite.ui.commons" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop">
+		<l:content>
+			<HBox><Text text="Hourly Comparison"></Text>
+				<layoutData>
+						<l:GridData span="L12 M12 S12" />
+				</layoutData>
+			</HBox>
+			<l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop">
+				<l:content>
+					<Text text="Interval Time From :  " class="sapUiTinyMarginTop">
+						<layoutData>
+							<l:GridData span="L2 M6 S6" />
+						</layoutData>
+					</Text>
+					<Input id="txt_interFrom" class="cnpbtn"  type="Text" placeholder="from">
+						<layoutData>
+							<l:GridData span="L2 M6 S6" />
+						</layoutData>
+					</Input>
+					<Text text="Interval Time To :  " class="sapUiTinyMarginTop">
+						<layoutData>
+							<l:GridData span="L2 M6 S6" />
+						</layoutData>
+					</Text>
+					<Input id="txt_interTo" class="cnpbtn" type="Text" placeholder="to">
+						<layoutData>
+							<l:GridData span="L2 M6 S6" />
+						</layoutData>
+					</Input>
+					<Button text="Refresh" class="cnpbtn">
+						<layoutData>
+							<l:GridData span="L2 M2 S12" />
+						</layoutData>
+					</Button>	
+					<HBox>
+						<Label text="Max" class="sapUiTinyMarginTop"></Label>
+						<Input text=""></Input>
+						<layoutData>
+								<l:GridData span="L3 M3 S12" />
+						</layoutData>
+					</HBox>
+					<HBox>
+						<layoutData>
+								<l:GridData span="L9 M9 S12" />
+						</layoutData>
+					</HBox>
+					<HBox>
+						<layoutData>
+								<l:GridData span="L3 M3 S12" />
+						</layoutData>
+					</HBox>
+					<ScrollContainer focusable="true" height="100%"
+						horizontal="false" vertical="true" width="100%">
+						<viz:Popover id="idPopOver"></viz:Popover>
+						<viz:VizFrame height="12em" id="idVizFrameBar"
+							uiConfig="{applicationSet:'fiori'}" vizType="bar" width="100%">
+						</viz:VizFrame>
+						<layoutData>
+							<l:GridData span="L9 M9 S12" />
+						</layoutData>
+					</ScrollContainer>
+			</l:content>
+			</l:Grid>
+			<l:Grid defaultSpan="L12 M12 S12" class="sapUiNoMarginTop">
+				<l:content>
+				<VBox>
+				<HBox>
+					<Label text="Max" class="sapUiTinyMarginTop"></Label>
+					<Input text=""></Input>
+					<layoutData>
+							<l:GridData span="L3 M3 S12" />
+					</layoutData>
+				</HBox>
+				<HBox>
+					<Label text="Max" class="sapUiTinyMarginTop"></Label>
+					<Input text=""></Input>
+					<layoutData>
+							<l:GridData span="L3 M3 S12" />
+					</layoutData>
+				</HBox>
+					<layoutData>
+							<l:GridData span="L3 M3 S12" />
+					</layoutData>
+				</VBox>
+			<!-- <ScrollContainer focusable="true" height="100%"
+				horizontal="false" vertical="true" width="100%">
+				<viz:Popover id="idPopOver"></viz:Popover>
+				<viz:VizFrame height="12em" id="idVizFrameBar"
+					uiConfig="{applicationSet:'fiori'}" vizType="bar" width="100%">
+				</viz:VizFrame>
+				<layoutData>
+					<l:GridData span="L9 M9 S12" />
+				</layoutData>
+			</ScrollContainer> -->
+			</l:content>
+			</l:Grid>
+			
+		</l:content>
+	</l:Grid>
+
+</core:FragmentDefinition>
